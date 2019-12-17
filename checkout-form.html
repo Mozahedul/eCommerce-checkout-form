@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>checkout form 3</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Demo project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-layout">
+        <a href="#" class="close-btn" title="Click to close"></a>
+        <div class="shipping-payment">
+            <span class="checkout-text">Checkout</span>
+            <span class="shipping-text">Shipping > <a href="#">Payment Method</a> > Confirmation</span>
+        </div>
+        <div class="wallet-card">
+            <div class="wallet">
+                <div class="wallet-heading">Wallet</div>
+                <div class="card-img">
+                    <div class="img-grid">
+                        <a href="#"><img src="images/credit-card.svg" alt="discover card" title="Pay with Discover Card"></a>
+                    </div>
+                    <div class="img-grid">
+                        <a href="#"><img src="images/paypal.svg" alt="discover card" title="Pay with PayPal Card"></a>
+                    </div>
+                    <div class="img-grid">
+                        <a href="#"><img src="images/visa.svg" alt="discover card" title="Pay with Visa Card"></a>
+                    </div>
+                </div>
+            </div>
+            <form class="card">
+                <div class="form-heading">New Card</div>
+                <input type="text" placeholder="Name on card" class="input-card noSpinner" required>
+                <input type="number" placeholder="2546 8952 4752 8914" class="input-card noSpinner" required>
+                <div class="month-yr-selector">
+                    <label class="label-style">
+                        <select>
+                            <option value="" selected>Select Month</option>
+                            <option value="">01</option>
+                            <option value="">02</option>
+                            <option value="">03</option>
+                            <option value="">04</option>
+                            <option value="">05</option>
+                            <option value="">06</option>
+                            <option value="">07</option>
+                            <option value="">08</option>
+                            <option value="">09</option>
+                            <option value="">10</option>
+                            <option value="">11</option>
+                            <option value="">12</option>
+                        </select>
+                        <span class="check-arrow"></span>
+                    </label>
+                    <label class="label-style pos-r">
+                        <select>
+                            <option value="" selected>Select Year</option>
+                            <option value="">2019</option>
+                            <option value="">2020</option>
+                            <option value="">2021</option>
+                            <option value="">2022</option>
+                            <option value="">2023</option>
+                            <option value="">2024</option>
+                            <option value="">2025</option>
+                            <option value="">2026</option>
+                            <option value="">2027</option>
+                            <option value="">2028</option>
+                            <option value="">2029</option>
+                            <option value="">2030</option>
+                        </select>
+                        <span class="check-arrow"></span>
+                    </label>
+                </div>
+                <div class="cvc-zip">
+                    <label class="label-number">
+                        <input type="number" placeholder="CVC?" class="input-number noSpinner">
+                    </label>
+                    <label class="label-number-r">
+                        <input type="number" placeholder="ZIP" class="input-number position-r noSpinner">
+                    </label>
+                </div>
+                <label class="label-container">Add card to wallet.
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <input type="submit" value="Continue" class="input-submit">
+            </form>
+        </div>
+        <div class="account-total">
+            <div class="account">
+                <div class="shoe">
+                    <a href="#"><img src="images/shoe.png" alt="shoe"></a>
+                </div>
+                <div class="shoe-right">
+                    <div class="shoe-text">
+                        <span class="shoe-hd">The chelsee shoe</span>
+                        <span class="shoe-color">Black</span>
+                        <span class="shoe-qnt">Quantity : 1</span>
+                    </div>
+                    <div class="shoe-amount">
+                        <p>$245</p>
+                    </div>
+                </div>
+            </div>
+            <div class="account">
+                <div class="shoe">
+                    <a href="#"><img src="images/shoe.png" alt="shoe"></a>
+                </div>
+                <div class="shoe-right">
+                    <div class="shoe-text">
+                        <span class="shoe-hd">The chelsee shoe</span>
+                        <span class="shoe-color">Black</span>
+                        <span class="shoe-qnt">Quantity : 1</span>
+                    </div>
+                    <div class="shoe-amount">
+                        <p>$245</p>
+                    </div>
+                </div>
+            </div>
+            <div class="account">
+                <div class="shoe">
+                    <a href="#"><img src="images/shoe.png" alt="shoe"></a>
+                </div>
+                <div class="shoe-right">
+                    <div class="shoe-text">
+                        <span class="shoe-hd">The chelsee shoe</span>
+                        <span class="shoe-color">Black</span>
+                        <span class="shoe-qnt">Quantity : 1</span>
+                    </div>
+                    <div class="shoe-amount">
+                        <p>$245</p>
+                    </div>
+                </div>
+            </div>
+            <div class="subtotal-tax">
+                <div class="subtotal-left">
+                    <span class="subtotal">Subtotal</span>
+                    <span class="subtotal">Shipping</span>
+                    <span class="subtotal">Taxes</span>
+                </div>
+                <div class="subtotal-right">
+                    <span class="subtotal-count">$259</span>
+                    <span class="subtotal-count">Free</span>
+                    <span class="subtotal-count">$25.36</span>
+                </div>
+                <hr class="hr-style">
+                <div class="subtotal-left txt-bold">
+                    <span class="subtotal">Total</span>
+                </div>
+                <div class="subtotal-right txt-bold">
+                    <span class="subtotal-count">$487</span>
+                </div>
+            </div>
+            <div class="total">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
