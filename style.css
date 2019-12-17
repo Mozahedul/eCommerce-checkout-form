@@ -1,0 +1,593 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-layout {
+    position: relative;
+    width: 90%;
+    margin: 30px auto;
+    padding: 30px 15px 15px;
+    background-color: rgb(248, 248, 248);
+}
+
+.shipping-payment {
+    border-bottom: 1px solid rgb(220, 220, 220);
+    padding-bottom: 8px;
+}
+
+.shipping-payment .checkout-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(80, 80, 80);
+    padding-right: 15px;
+    letter-spacing: 0.6px
+}
+
+.shipping-payment .shipping-text {
+    font-size: 11px;
+    color: rgb(150, 150, 150);
+    letter-spacing: 0.5px;
+}
+
+.shipping-payment .shipping-text>a {
+    color: rgb(80, 80, 80);
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.shipping-payment .shipping-text>a:hover {
+    color: rgb(140, 216, 58);
+}
+
+/* ====== close button style starts ======= */
+.form-layout .close-btn {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 5px;
+    top: 5px;
+}
+
+.form-layout .close-btn:before,
+.form-layout .close-btn:after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background-color: rgb(150, 150, 150);
+    top: 12px;
+    left: 6px;
+}
+
+.form-layout .close-btn:before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.form-layout .close-btn:after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.form-layout .close-btn:hover:before,
+.form-layout .close-btn:hover:after {
+    background-color: rgb(255, 51, 51);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+/* ===== new card style starts ====== */
+
+.wallet-card {
+    margin-top: 15px;
+    width: 100%;
+}
+
+.wallet {
+    width: 100%;
+    overflow: auto;
+}
+
+.card-img {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.wallet .img-grid {
+    width: 32%;
+    padding: 10px;
+    text-align: center;
+}
+
+.wallet .img-grid img {
+    width: 100%;
+    min-width: 50px;
+    max-width: 80px;
+    height: auto;
+}
+
+.wallet-card .form-heading,
+.wallet-card .wallet-heading {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(130, 130, 130);
+}
+
+.wallet-card .form-heading {
+    padding-bottom: 15px;
+}
+
+.wallet-card .wallet-heading {
+    padding-bottom: 5px;
+}
+
+.card {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.wallet-card .card .input-card {
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid rgb(230, 230, 230);
+    margin-bottom: 15px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    color: rgb(60, 60, 60);
+}
+
+.wallet-card .card .input-card:hover,
+.wallet-card .card .input-card:focus,
+.wallet-card .card .input-card:valid {
+    border: 1px solid rgb(180, 180, 180);
+}
+
+/* ===== number field style starts ===== */
+.card .cvc-zip {
+    margin-bottom: 15px;
+}
+
+.wallet-card input[type=number].noSpinner {
+    -moz-appearance: textfield;
+}
+
+.wallet-card input[type=number].noSpinner::-webkit-inner-spin-button,
+.wallet-card input[type=number].noSpinner::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+/* ==== dropdown arrow style starts ==== */
+.month-yr-selector {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.card .label-number,
+.card .label-number-r {
+    width: 49%;
+    position: relative;
+    display: inline-block;
+}
+
+.month-yr-selector .label-style {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.label-style select::-ms-expand {
+    display: none;
+}
+
+.month-yr-selector .label-style select,
+.card .label-number .input-number,
+.card .label-number-r .input-number {
+    width: 100%;
+    display: block;
+    padding: 8px;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid rgb(230, 230, 230);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    color: rgb(60, 60, 60);
+}
+
+.month-yr-selector .label-style select:hover,
+.card .label-number .input-number:hover,
+.card .label-number-r .input-number:hover {
+    border: 1px solid rgb(180, 180, 180);
+}
+
+.month-yr-selector .label-style select:hover~.check-arrow:after {
+    border-color: rgb(140, 216, 58);
+}
+
+.month-yr-selector .pos-r {
+    margin: 15px 0;
+}
+
+.card .label-number-r,
+.card .label-number-r .input-number {
+    float: right;
+}
+
+/* ====== select field style starts ===== */
+.label-style select~.check-arrow:after {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    top: 12px;
+    right: 10px;
+    border: solid rgb(210, 210, 210);
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    pointer-events: none;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+/* ====== hide the default spin button of number ===== */
+input[type=number].noSpinner {
+    -moz-appearance: textfield;
+
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+/* ===== checkbox button style starts ====== */
+.label-container {
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    padding-left: 32px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: rgb(120, 120, 120);
+    padding-top: 2px;
+    cursor: pointer;
+}
+
+/* hide the default checkbox */
+.label-container input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+/* create a new or custom checkbox */
+.label-container input~.checkmark {
+    position: absolute;
+    width: 20px;
+    height: 19px;
+    background-color: rgb(150, 150, 150);
+    left: 0;
+    top: 0;
+}
+
+/* create and indicator or checkmark */
+.label-container input~.checkmark:after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 10px;
+    left: 6px;
+    top: 2px;
+    border: solid rgb(255, 255, 255);
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    display: none;
+}
+
+.label-container input:checked~.checkmark:after {
+    display: block;
+}
+
+/* ===== checkbox button style ends ===== */
+
+/* === submit button style starts ==== */
+.card .input-submit {
+    display: block;
+    width: 100%;
+    background-color: rgb(140, 216, 58);
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    padding: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    color: rgb(244, 244, 244);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.card .input-submit:hover {
+    background-color: rgb(91, 149, 29)
+}
+
+
+/* =========  account style start ======== */
+.account-total {
+    width: 100%;
+    overflow: auto;
+    margin-top: 30px;
+    padding: 5px 0 30px;
+}
+
+.account {
+    padding: 15px 0;
+    position: relative;
+    overflow: auto;
+    border-bottom: 1px solid rgb(210, 210, 210);
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+}
+
+.account:first-child {
+    border-top: 1px solid rgb(210, 210, 210);
+}
+
+.shoe img {
+    width: 100%;
+    min-width: 20px;
+    max-width: 80px;
+    border: 1px solid rgb(230, 230, 230);
+}
+
+.shoe-right {
+    margin-top: 10px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.shoe-hd {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(110, 110, 110);
+}
+
+.shoe-color {
+    color: rgb(150, 150, 150);
+    font-size: 12px;
+    font-style: italic;
+}
+
+.shoe-qnt {
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(130, 130, 130);
+}
+
+.shoe-text span {
+    display: block;
+    padding-bottom: 5px;
+
+}
+
+.shoe-amount {
+    display: inline-block;
+    margin-top: 0;
+}
+
+.shoe-amount p {
+    /*float: right;*/
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(120, 120, 120);
+}
+
+.subtotal-tax {
+    margin-top: 60px;
+
+    overflow: auto;
+}
+
+.subtotal-left,
+.subtotal-right {
+    width: 50%;
+    font-size: 13px;
+    color: rgb(40, 40, 40);
+    display: inline-block;
+}
+
+.subtotal {
+    display: block;
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+.subtotal-right {
+    float: right;
+}
+
+.subtotal-count {
+    text-align: right;
+    display: block;
+    padding-bottom: 5px;
+}
+
+.hr-style {
+    border: none;
+    height: 1px;
+    background-color: rgb(210, 210, 210);
+}
+
+.txt-bold {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(20, 20, 20);
+}
+
+/* ==== Small devices or most phones ===== */
+@media (min-width: 480px) {
+    .form-layout {
+        overflow: auto;
+        width: 98%;
+        padding: 30px 15px 15px
+    }
+
+    .wallet-card {
+        width: 45%;
+        float: left;
+    }
+
+    .account-total {
+        width: 53%;
+        float: right;
+        border-left: 1px solid rgb(210, 210, 210);
+        margin-top: 0;
+        padding: 5px 0 30px 15px;
+    }
+
+    .account:first-child {
+        border-top: none;
+    }
+}
+
+/*===== Most tablets ===== */
+@media (min-width: 768px) {
+    .form-layout {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .wallet-card {
+        width: 48%;
+    }
+
+    .account-total {
+        width: 48%;
+    }
+
+    .account:first-child {
+        border-top: none;
+    }
+
+    .month-yr-selector .label-style,
+    .card .label-number,
+    .card .label-number-r {
+        width: 49%;
+        position: relative;
+        display: inline-block;
+    }
+
+    .month-yr-selector .pos-r,
+    .card .label-number-r,
+    .card .label-number-r .input-number {
+        float: right;
+    }
+
+    .month-yr-selector .pos-r {
+        margin: 0;
+    }
+
+    .account {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+     .shoe {
+        width: 30%;
+    }
+
+    .shoe-right {
+        margin-top: 0;
+        width: 68%;
+    }
+}
+
+/* ===== Small desktop ===== */
+@media (min-width: 992px) {
+    .form-layout {
+        width: 75%;
+    }
+}
+
+/* ===== Large desktop and wide screen ===== */
+@media (min-width: 1200px) {
+    .form-layout {
+        width: 60%;
+    }
+}
+
+/* ==== HD or retina display ===== */
+@media (min-width: 1920px) {
+    .form-layout {
+        width: 40%;
+    }
+}
+
+/* ===== 4K or ultra HD display ===== */
+@media (min-width: 2560px) {
+    .form-layout {
+        width: 30%;
+    }
+}
